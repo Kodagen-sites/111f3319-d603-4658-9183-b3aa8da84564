@@ -147,7 +147,14 @@ function StatsBand() {
 function ManifestoSection() {
   return (
     <section className="relative flex min-h-[80vh] items-center overflow-hidden bg-ink px-6 md:px-12">
-      <div className="mx-auto w-full max-w-7xl">
+      <img
+        src={img("section-manifesto", "formula one car motion blur track")}
+        alt=""
+        aria-hidden
+        className="absolute inset-0 h-full w-full object-cover opacity-25"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
+      <div className="relative mx-auto w-full max-w-7xl">
         <FadeUp>
           <div className="mb-6 font-mono text-xs uppercase tracking-[0.4em] text-bg/60">
             {siteConfig.whyUs.heading}
@@ -276,8 +283,15 @@ function ServicesGrid() {
 // ── Section 6 — CTA ──
 function CtaSection() {
   return (
-    <section className="relative bg-bg px-6 py-32">
-      <div className="mx-auto max-w-3xl text-center">
+    <section className="relative overflow-hidden bg-bg px-6 py-32">
+      <img
+        src={img("section-cta", "formula one race podium celebration")}
+        alt=""
+        aria-hidden
+        className="absolute inset-0 h-full w-full object-cover opacity-20"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-bg via-bg/80 to-bg" />
+      <div className="relative mx-auto max-w-3xl text-center">
         <FadeUp>
           <h2 className="mb-6 font-display text-5xl leading-[1.0] text-ink md:text-7xl">
             {siteConfig.ctaBlock.heading}

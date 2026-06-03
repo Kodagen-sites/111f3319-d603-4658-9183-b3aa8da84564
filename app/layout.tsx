@@ -5,6 +5,7 @@ import Header from "@/components/headers/Header";
 import Footer from "@/components/Footer";
 import { FilmGrain } from "@/components/motion";
 import "./globals.css";
+import EditorBridge from "../components/__kodagen/EditorBridge";
 
 const archivo = Archivo_Black({
   subsets: ["latin"],
@@ -57,6 +58,7 @@ export default function RootLayout({
           <Footer />
           <FilmGrain opacity={0.03} blendMode="multiply" />
         </div>
+        <EditorBridge />
       </body>
     </html>
   );

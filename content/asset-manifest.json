@@ -1,5 +1,21 @@
 {
-  "images": {},
+  "images": {
+    "og-image": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/og-image.png",
+    "scene-1-end": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/scene-1-end.png",
+    "scene-1-start": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/scene-1-start.png",
+    "section-about": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-about.png",
+    "section-contact": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-contact.png",
+    "section-garage": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-garage.png",
+    "section-services": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-services.png",
+    "section-work-1": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-work-1.png",
+    "section-work-2": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-work-2.png",
+    "section-work-3": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-work-3.png",
+    "section-work-4": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-work-4.png",
+    "section-work-5": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-work-5.png",
+    "section-work-6": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/section-work-6.png",
+    "service-aerodynamics": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/service-aerodynamics.png",
+    "service-partnerships": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/images/service-partnerships.png"
+  },
   "videos": {
     "final": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/videos/final.mp4",
     "scene-1": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/111f3319-d603-4658-9183-b3aa8da84564/videos/scene-1.mp4"
