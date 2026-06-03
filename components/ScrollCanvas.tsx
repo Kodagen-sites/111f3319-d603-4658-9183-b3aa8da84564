@@ -137,19 +137,10 @@ export default function ScrollCanvas({
       const ch = window.innerHeight;
       const iw = img.naturalWidth;
       const ih = img.naturalHeight;
-      // Frames are landscape (16:9). On a PORTRAIT MOBILE viewport, "cover"
-      // (max) scales to fill height and crops the width to the center ~25% —
-      // and because the Veo composition is intentionally OFF-CENTER, that
-      // crops the subject right out, so the hero looks empty/"not showing".
-      // Fix: on portrait-mobile, FIT THE WIDTH so the whole composition is
-      // visible, sit it slightly above center, and let the brand bg
-      // (canvas --bg-color) fill above/below. Desktop keeps full-bleed cover.
-      const portraitMobile = cw < 768 && ch >= cw;
-      // Mobile: CONTAIN so the whole frame fits the viewport with no edges
-      // cropped (brand bg letterboxes the spare space). Desktop: COVER.
-      const scale = portraitMobile
-        ? Math.min(cw / iw, ch / ih)
-        : Math.max(cw / iw, ch / ih);
+      // COVER on every viewport so the frame fully fills the hero height —
+      // on portrait mobile "contain" left empty letterbox bands that made
+      // the hero look like it wasn't covered.
+      const scale = Math.max(cw / iw, ch / ih);
       const dw = iw * scale;
       const dh = ih * scale;
       const dx = (cw - dw) / 2;
