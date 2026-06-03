@@ -123,12 +123,16 @@ export default function HeroScrollText({
         style={{ background: scrimBg }}
       />
       <div className={`relative ${innerClass}`}>
-        <AnimatePresence mode="wait">
+        {/* Grid-stack crossfade: outgoing + incoming chapters share one cell so
+            the swap overlaps instead of blanking out (no flash on scrub). */}
+        <div className="grid">
+        <AnimatePresence>
           <motion.div
             key={activeIdx}
+            className="[grid-area:1/1]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.5 } }}
-            exit={{ opacity: 0, transition: { duration: 0.25 } }}
+            exit={{ opacity: 0, transition: { duration: 0.5 } }}
           >
             {chapter.eyebrow && (
               <motion.span
@@ -191,6 +195,7 @@ export default function HeroScrollText({
             )}
           </motion.div>
         </AnimatePresence>
+        </div>
 
         {showChapterDots && chapters.length > 1 && (
           <div className="mt-10 flex items-center gap-2">
