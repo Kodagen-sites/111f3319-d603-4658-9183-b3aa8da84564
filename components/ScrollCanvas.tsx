@@ -204,7 +204,7 @@ export default function ScrollCanvas({
   // a tall pin-spacer; the section must be free to grow to that height.
   return (
     <section ref={containerRef} className="relative w-full">
-      <div ref={pinRef} className="relative h-screen w-full overflow-hidden">
+      <div ref={pinRef} className="relative h-[100dvh] w-full overflow-hidden">
         <canvas
           ref={canvasRef}
           className="absolute inset-0 h-full w-full"
