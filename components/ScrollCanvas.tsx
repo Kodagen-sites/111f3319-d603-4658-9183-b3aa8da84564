@@ -145,11 +145,15 @@ export default function ScrollCanvas({
       // visible, sit it slightly above center, and let the brand bg
       // (canvas --bg-color) fill above/below. Desktop keeps full-bleed cover.
       const portraitMobile = cw < 768 && ch >= cw;
-      const scale = portraitMobile ? cw / iw : Math.max(cw / iw, ch / ih);
+      // Always COVER the viewport so the frame fills the full hero height
+      // (fit-width left a short band + empty brand bg on portrait mobile).
+      const scale = Math.max(cw / iw, ch / ih);
       const dw = iw * scale;
       const dh = ih * scale;
       const dx = (cw - dw) / 2;
-      const dy = portraitMobile ? (ch - dh) * 0.42 : (ch - dh) / 2;
+      // On mobile, bias the crop slightly toward the top so the off-center
+      // subject stays in frame; desktop stays centered.
+      const dy = portraitMobile ? (ch - dh) * 0.4 : (ch - dh) / 2;
       ctx.clearRect(0, 0, cw, ch);
       ctx.drawImage(img, dx, dy, dw, dh);
     };
