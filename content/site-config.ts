@@ -267,6 +267,8 @@ export const siteConfig = {
     { value: "352", label: "Top speed km/h" },
     { value: "11", label: "Lap records" },
     { value: "140", label: "Grands prix" },
+    { value: "6", label: "Car projects" },
+    { value: "40", label: "Team members" },
   ],
 
   features: [
